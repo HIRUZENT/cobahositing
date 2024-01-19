@@ -1,0 +1,18 @@
+.WrapWelcome{
+  display: flex;
+}
+.WrapWelcome button {
+  background-color: white;
+  margin-top: 20px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+  border: 3px solid rgba(220, 220, 220, 1);
+}
+.wrapPage button {
+  padding: 5px 15px 5px 15px;
+  border-radius: 10px;
+}
+
+.App {
+  margin-top: 9rem;
+}

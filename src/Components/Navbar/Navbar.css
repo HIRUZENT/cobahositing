@@ -1,0 +1,79 @@
+* {
+  font-family: "Poppins";
+  /* border: 1px solid black; */
+}
+:root {
+  --main_color: #001b79;
+  --main_color2: white;
+  --main_color3: black;
+}
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--main_color2);
+  padding: 1.5rem;
+  margin-top: -9rem;
+}
+.containerNavbar {
+  display: flex;
+  justify-content: space-between;
+}
+.container #logoNavbar {
+  width: 3rem;
+  height: 3rem;
+}
+.container #headerName {
+  color: var(--main_color3);
+  margin: 0.5rem 0rem 0rem 1rem;
+  font-size: 1.5rem;
+}
+.containerNavbar ul {
+  display: flex;
+  margin-top: 1rem;
+}
+.container ul li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+.container ul li a {
+  color: var(--main_color3);
+  text-decoration: none;
+}
+@keyframes collapse {
+  from {
+    transform: translateY(-10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes collapse2 {
+  from {
+    transform: translateY(10%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.dropDowns {
+  animation: collapse 0.3s ease;
+  position: fixed;
+  z-index: 99;
+  border-radius: 10px;
+  background-color: var(--main_color);
+  padding: 10px 50px 0.5px 10px;
+}
+.dropDowns li p {
+  display: block;
+  color: white;
+}
+@media (width <= 678px) {
+  .containerNavbar {
+    font-size: 0.6rem;
+  }
+  .wraper #headerName {
+    font-size: 0.7rem;
+  }
+}
